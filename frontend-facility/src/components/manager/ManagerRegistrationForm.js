@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ManagerServiceRegistration from "../../services/ManagerServiceRegistration";
 import "../styles/ManagerRegistrationForm.css";
+import { Link } from "react-router-dom";
 
 const ManagerRegistrationForm = () => {
     const [id, setId] = useState("");
@@ -74,7 +75,7 @@ const ManagerRegistrationForm = () => {
         <div>
             <nav className="navbar navbar-expand-lg fixed-top">
                 <div className="container">
-                    <a className="navbar-brand" href="index.html">Apartment Facility</a>
+                <Link to="/" class=" navbar-brand ">Apartment Facility</Link> 
                     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -86,10 +87,10 @@ const ManagerRegistrationForm = () => {
                         <div className="offcanvas-body">
                             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li className="nav-item">
-                                    <a className="nav-link active" aria-current="page" href="index.html">Home</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="page.html">Signup</a>
+                                <Link to="/" className="nav-link active" aria-current="page">Home</Link>
+                </li>
+                <li class="nav-item">
+                <Link to="/signupdashboard" className="nav-link active" aria-current="page">SignIn</Link>
                                 </li>
                             </ul>
                         </div>

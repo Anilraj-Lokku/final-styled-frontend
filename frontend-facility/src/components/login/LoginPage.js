@@ -35,6 +35,7 @@
 
 import { useState } from "react";
 import AuthService from "../../services/AuthService";
+import { Link } from "react-router-dom";
 
 const LoginPage = () => {
     const [username, setUsername] = useState('');
@@ -54,7 +55,7 @@ const LoginPage = () => {
           
         <nav class="navbar navbar-expand-lg  fixed-top">
     <div class="container">
-      <a class="navbar-brand " href="index.html">Apartment Facility</a>
+    <Link to="/" class=" navbar-brand ">Apartment Facility</Link> 
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -66,10 +67,10 @@ const LoginPage = () => {
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active " aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="page.html">Signup</a>
+            <Link to="/" className="nav-link active" aria-current="page">Home</Link>
+                </li>
+                <li class="nav-item">
+                <Link to="/signupdashboard" className="nav-link active" aria-current="page">SignIn</Link>
             </li>
 
           </ul>

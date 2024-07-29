@@ -7,7 +7,7 @@ const Managerview = () => {
 
       <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container">
-          <a className="navbar-brand" href="index.html">Apartment Facility</a>
+        <Link to="/" class=" navbar-brand ">Apartment Facility</Link> 
           <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>

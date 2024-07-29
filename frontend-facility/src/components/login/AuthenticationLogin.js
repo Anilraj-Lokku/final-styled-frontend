@@ -33,7 +33,7 @@ const AuthenticationLogin = () => {
           
             <nav class="navbar navbar-expand-lg  fixed-top">
         <div class="container">
-          <a class="navbar-brand " href="index.html">Apartment Facility</a>
+        <Link to="/" class=" navbar-brand ">Apartment Facility</Link> 
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
